@@ -15,6 +15,7 @@
  */
 package org.springframework.samples.petclinic.model;
 
+import java.io.Serial;
 import java.io.Serializable;
 
 import jakarta.persistence.GeneratedValue;
@@ -32,6 +33,7 @@ import jakarta.persistence.MappedSuperclass;
 @MappedSuperclass
 public class BaseEntity implements Serializable {
 
+	@Serial
 	private static final long serialVersionUID = -3856744164839586177L;
 
 	@Id

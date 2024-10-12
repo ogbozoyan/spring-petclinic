@@ -15,6 +15,7 @@
  */
 package org.springframework.samples.petclinic.vet;
 
+import java.io.Serial;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
@@ -48,6 +49,7 @@ import jakarta.persistence.Table;
 @Table(name = "vets")
 public class Vet extends Person {
 
+	@Serial
 	private static final long serialVersionUID = 2216866745632621103L;
 
 	@ManyToMany(fetch = FetchType.EAGER)

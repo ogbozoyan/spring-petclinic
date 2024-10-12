@@ -19,6 +19,8 @@ import jakarta.persistence.Column;
 import jakarta.persistence.MappedSuperclass;
 import jakarta.validation.constraints.NotBlank;
 
+import java.io.Serial;
+
 /**
  * Simple JavaBean domain object representing an person.
  *
@@ -27,6 +29,7 @@ import jakarta.validation.constraints.NotBlank;
 @MappedSuperclass
 public class Person extends BaseEntity {
 
+	@Serial
 	private static final long serialVersionUID = -5934070342233945557L;
 
 	@Column(name = "first_name")

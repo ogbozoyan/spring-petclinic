@@ -15,6 +15,7 @@
  */
 package org.springframework.samples.petclinic.owner;
 
+import java.io.Serial;
 import java.time.LocalDate;
 
 import org.springframework.format.annotation.DateTimeFormat;
@@ -35,6 +36,7 @@ import jakarta.validation.constraints.NotBlank;
 @Table(name = "visits")
 public class Visit extends BaseEntity {
 
+	@Serial
 	private static final long serialVersionUID = -8061148591973721283L;
 
 	@Column(name = "visit_date")

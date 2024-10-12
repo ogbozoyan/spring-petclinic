@@ -15,6 +15,7 @@
  */
 package org.springframework.samples.petclinic.owner;
 
+import java.io.Serial;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -46,6 +47,7 @@ import jakarta.validation.constraints.NotBlank;
 @Table(name = "owners")
 public class Owner extends Person {
 
+	@Serial
 	private static final long serialVersionUID = 7676019169107660494L;
 
 	@Column(name = "address")
